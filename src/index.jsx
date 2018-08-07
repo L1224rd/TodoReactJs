@@ -42,8 +42,8 @@ const init = (array) => { // render the todoList "component" to the app div
 $(document).ready(() => { // using jquery to get the value of the #name input and send it to the addName function when #add button is clicked
 
   $('#add').click(e => {
-    addName($('#name').val()); // gets the value
-    $('#name').val(''); // sets the value
+    addName($('#name').val()); // gets the value of the input and pass it to addName function
+    $('#name').val(''); // sets the value of the input to empty after "submiting" the item
   });
 
 });
