@@ -1,4 +1,4 @@
-const webpack = require('webpack');
+require('webpack');
 const path = require('path');
 
 module.exports = {
@@ -7,7 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {

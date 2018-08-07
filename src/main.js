@@ -1,5 +1,2 @@
-import css from './style.css';
-
-require('./index.jsx');
-
-console.log(1);
+// import './style.css';
+import './index.jsx';
