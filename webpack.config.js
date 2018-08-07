@@ -20,6 +20,19 @@ module.exports = {
             plugins: ['transform-object-rest-spread']
           }
         }
+      },
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      },
+      {
+        test: /\.jsx$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['react'],
+          }
+        }
       }
     ]
   },
